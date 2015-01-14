@@ -6,11 +6,13 @@ $(document).ready(function() {
   .mouseleave(function() {
     $('.ryu-ready').hide();
     $('.ryu-still').show();
+    $('.info').show();
   })
   .mousedown(function() {
     playHadouken();    
     $('.ryu-ready').hide();
     $('.ryu-throwing').show();
+    $('.info').hide();
     $('.hadouken').finish().show()
     .animate(
       {'left': '300px'},
